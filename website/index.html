@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webcomponent Demo</title>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="..\vue-webcomponent\dist\my-component.js"></script>
+
+    <style>
+      #header {
+        text-align: center;
+      }
+      .container {
+        border-style: solid;
+        border-width: 1px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" class="container">
+      <h1>WebComponent Demo with Vue.js</h1>
+      <span>This is part of the website</span>
+    </div>
+    <br />
+    <div class="container">
+      <my-component> </my-component>
+    </div>
+  </body>
+</html>

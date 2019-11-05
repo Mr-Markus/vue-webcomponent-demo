@@ -20,5 +20,10 @@ npm run build
 npm run lint
 ```
 
+### Create WebComponent
+```
+vue build --target wc --name my-component .\src\App.vue
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
