@@ -2,7 +2,11 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
-    <div id="slot-container">
+    <div class="container">
+      This is injected with a prop
+      <h2>{{ title }}</h2>
+    </div>
+    <div class="container">
       <slot></slot>
     </div>
   </div>
@@ -13,6 +17,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
   name: "app",
+  props: ["title"],
   components: {
     HelloWorld
   }
@@ -28,9 +33,10 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-#slot-container {
+.container {
   border-style: solid;
   border-width: 1px;
   padding: 5px;
+  margin: 5px 0px 5px 0px;
 }
 </style>

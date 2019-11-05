@@ -314,7 +314,7 @@ function toComment(sourceMap) {
 
 exports = module.exports = __webpack_require__("24fb")(false);
 // Module
-exports.push([module.i, "#app{font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50;margin-top:60px}#slot-container{border-style:solid;border-width:1px;padding:5px}", ""]);
+exports.push([module.i, "#app{font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50;margin-top:60px}.container{border-style:solid;border-width:1px;padding:5px;margin:5px 0 5px 0}", ""]);
 
 
 /***/ }),
@@ -994,12 +994,12 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: C:/Users/marku/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"116fd655-vue-loader-template"}!C:/Users/marku/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=67d7dd3a&shadow
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('img',{attrs:{"alt":"Vue logo","src":__webpack_require__("cf05")}}),_c('HelloWorld',{attrs:{"msg":"Welcome to Your Vue.js App"}}),_c('div',{attrs:{"id":"slot-container"}},[_vm._t("default")],2)],1)}
+// CONCATENATED MODULE: C:/Users/marku/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"116fd655-vue-loader-template"}!C:/Users/marku/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=db48fae2&shadow
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[_c('img',{attrs:{"alt":"Vue logo","src":__webpack_require__("cf05")}}),_c('HelloWorld',{attrs:{"msg":"Welcome to Your Vue.js App"}}),_c('div',{staticClass:"container"},[_vm._v(" This is injected with a prop "),_c('h2',[_vm._v(_vm._s(_vm.title))])]),_c('div',{staticClass:"container"},[_vm._t("default")],2)],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=67d7dd3a&shadow
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=db48fae2&shadow
 
 // CONCATENATED MODULE: C:/Users/marku/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"116fd655-vue-loader-template"}!C:/Users/marku/AppData/Roaming/npm/node_modules/@vue/cli-service-global/node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/HelloWorld.vue?vue&type=template&id=0b843c56&scoped=true&
 var HelloWorldvue_type_template_id_0b843c56_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"hello"},[_c('h1',[_vm._v(_vm._s(_vm.msg))])])}
@@ -1154,9 +1154,14 @@ var component = componentNormalizer_normalizeComponent(
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ var Appvue_type_script_lang_js_shadow = ({
   name: "app",
+  props: ["title"],
   components: {
     HelloWorld: HelloWorld
   }
